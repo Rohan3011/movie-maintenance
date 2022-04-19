@@ -1,0 +1,11 @@
+.root {
+    @apply h-full bg-gradient-to-r from-zinc-800 to-neutral-800;
+}
+
+.app {
+    @apply flex justify-center;
+}
+
+.app-body {
+    @apply w-full max-w-7xl;
+}

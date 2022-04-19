@@ -1,15 +1,15 @@
 .navbar {
-    @apply w-full p-4 flex bg-white shadow-md;
+    @apply w-full p-4 flex shadow-md;
 }
 
 .navbar-link {
-    @apply flex gap-4 w-full max-w-sm items-center;
+    @apply flex gap-4 w-full max-w-sm items-center text-slate-200;
 }
 
 .navbar-header {
-    @apply grow flex justify-center text-3xl font-bold;
+    @apply grow flex justify-center text-3xl text-slate-100 font-bold;
 }
 
 .navbar-left {
-    @apply w-full max-w-sm flex gap-4 justify-end;
+    @apply w-full max-w-sm flex gap-4 justify-end text-slate-200;
 }

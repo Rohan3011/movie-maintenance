@@ -1,5 +1,5 @@
 .movie-card {
-    @apply w-full max-w-[280px] min-h-[300px] shadow-md rounded-md flex flex-col m-4;
+    @apply w-full max-w-[350px] min-h-[300px] shadow-md rounded-md flex flex-col m-4 bg-gradient-to-r from-zinc-700 to-neutral-700;
 }
 
 .movie-image {
@@ -11,9 +11,13 @@
 }
 
 .movie-title {
-    @apply text-slate-900 text-lg font-semibold;
+    @apply text-slate-100 text-lg font-semibold;
 }
 
 .movie-subtitle {
-    @apply text-slate-600;
+    @apply text-slate-300 text-sm;
+}
+
+.movie-tag {
+    @apply ml-auto bg-gradient-to-r from-zinc-500 to-neutral-500 text-slate-100 px-2 pt-1 rounded text-xs justify-center items-center;
 }

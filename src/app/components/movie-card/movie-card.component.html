@@ -1,7 +1,10 @@
-<div class="movie-card">
-    <img src={{image}} alt="movie thumbnail" class="movie-image" />
+<div class="movie-card" id={{movie.id}}>
+    <img src={{movie.image}} alt="movie thumbnail" class="movie-image" />
     <div class="movie-discription">
-        <h4 class="movie-title">{{title}}</h4>
-        <span class="movie-subtitle">{{releaseDate}}</span>
+        <div class="flex">
+            <h4 class="movie-title">{{movie.title}}</h4>
+            <span class="movie-tag">{{movie.language}}</span>
+        </div>
+        <span class="movie-subtitle">{{movie.dateOfRelease}}</span>
     </div>
 </div>
