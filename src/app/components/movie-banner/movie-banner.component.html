@@ -11,4 +11,6 @@
         <img src={{movie.image}} alt="movie thumbnail" class="image-bg" />
     </div>
 </div>
-<app-cast-list></app-cast-list>
+<div *ngIf="movie.id">
+    <app-cast-list [movie]="movie.id"></app-cast-list>
+</div>
