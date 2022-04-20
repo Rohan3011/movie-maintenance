@@ -9,6 +9,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { MovieCardComponent } from './components/movie-card/movie-card.component';
 import { MovieListComponent } from './components/movie-list/movie-list.component';
 import { MovieBannerComponent } from './components/movie-banner/movie-banner.component';
+import { ActorCardComponent } from './components/actor-card/actor-card.component';
 
 const appRoutes: Routes = [
   { path: '', component: MovieListComponent }
@@ -23,7 +24,8 @@ const appRoutes: Routes = [
     NavbarComponent,
     MovieCardComponent,
     MovieListComponent,
-    MovieBannerComponent
+    MovieBannerComponent,
+    ActorCardComponent
   ],
   imports: [
     BrowserModule,

@@ -21,19 +21,3 @@
 .movie-banner-title {
     @apply text-slate-100 text-5xl font-semibold py-8;
 }
-
-.actor-banner {
-    @apply box-border flex w-full max-w-sm m-4 shadow-md rounded-md bg-gradient-to-r from-zinc-700 to-neutral-700 border-b-4;
-}
-
-.actor-image {
-    @apply object-cover w-20 h-20;
-}
-
-.actor-description {
-    @apply p-4;
-}
-
-.actor-name {
-    @apply text-slate-100 text-xl font-semibold;
-}
