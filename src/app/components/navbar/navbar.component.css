@@ -1,5 +1,5 @@
 .navbar {
-    @apply w-full p-4 flex shadow-md;
+    @apply w-full p-4 flex border-b border-zinc-700;
 }
 
 .navbar-link {

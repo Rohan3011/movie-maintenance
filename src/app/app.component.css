@@ -1,6 +1,6 @@
-.root {
-    @apply h-full bg-gradient-to-r from-zinc-800 to-neutral-800;
-}
+/* .root {
+    @apply bg-gradient-to-r from-zinc-800 to-neutral-800;
+} */
 
 .app {
     @apply flex justify-center;
