@@ -16,7 +16,6 @@ export class CastListComponent implements OnInit {
 
   ngOnInit(): void {
     this.actorService.getActorsOfMovie(this.movie).subscribe((actors) => {
-      console.log(actors, this.movie)
       this.actors = actors;
     });
   }

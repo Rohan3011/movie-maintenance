@@ -10,6 +10,8 @@ export class MovieService {
 
   private baseUrl: string = 'http://localhost:8000/';
   private movieUrl: string = 'api/movies/'
+  private castUrl: string = 'api/casts/actor/'
+
   constructor(private http: HttpClient) { }
 
   getMovies(): Observable<Movie[]> {
@@ -19,4 +21,10 @@ export class MovieService {
   getMovieById(id: string | null): Observable<Movie> {
     return this.http.get<Movie>(this.baseUrl + this.movieUrl + id);
   }
+
+  getMoviesOfActor(id: string): Observable<Movie[]> {
+    return this.http.post<Movie[]>(
+      this.baseUrl + this.castUrl, { "actor": id });
+  }
+
 }

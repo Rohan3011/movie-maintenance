@@ -1,0 +1,7 @@
+.featured-title {
+    @apply text-2xl text-slate-100 font-semibold m-4 border-b border-zinc-500;
+}
+
+.movie-list {
+    @apply flex justify-center rounded-lg;
+}

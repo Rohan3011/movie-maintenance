@@ -1,0 +1,6 @@
+<div class="featured-list">
+    <h4 class="featured-title"> Featured in </h4>
+    <div class="overflow-auto grid content-center md:grid-cols-2 xl:grid-cols-4">
+        <app-movie-card *ngFor="let movie of movies" [movie]="movie" class="movie-list"></app-movie-card>
+    </div>
+</div>

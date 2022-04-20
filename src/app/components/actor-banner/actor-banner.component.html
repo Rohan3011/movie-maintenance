@@ -9,6 +9,6 @@
         <img src={{actor.image}} alt="actor thumbnail" class="image-bg" />
     </div>
 </div>
-<!-- <div *ngIf="actor.id">
-    <app-movie-list [movie]="actor.id"></app-movie-list>
-</div> -->
+<div *ngIf="actor.id">
+    <app-featured-list [actor]="actor.id"></app-featured-list>
+</div>
