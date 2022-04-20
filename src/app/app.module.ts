@@ -10,6 +10,7 @@ import { MovieCardComponent } from './components/movie-card/movie-card.component
 import { MovieListComponent } from './components/movie-list/movie-list.component';
 import { MovieBannerComponent } from './components/movie-banner/movie-banner.component';
 import { ActorCardComponent } from './components/actor-card/actor-card.component';
+import { CastListComponent } from './components/cast-list/cast-list.component';
 
 const appRoutes: Routes = [
   { path: '', component: MovieListComponent }
@@ -25,7 +26,8 @@ const appRoutes: Routes = [
     MovieCardComponent,
     MovieListComponent,
     MovieBannerComponent,
-    ActorCardComponent
+    ActorCardComponent,
+    CastListComponent
   ],
   imports: [
     BrowserModule,
