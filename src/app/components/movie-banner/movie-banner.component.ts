@@ -20,7 +20,7 @@ export class MovieBannerComponent implements OnInit {
     description: ""
   }
 
-  public movieId: string = "5";
+  public movieId: string = "";
   constructor(private movieService: MovieService, route: ActivatedRoute) {
     route.params.subscribe((params) => {
       this.movieId = params["id"];

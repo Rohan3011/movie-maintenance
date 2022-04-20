@@ -1,8 +1,8 @@
-.movie-banner {
+.actor-banner {
     @apply flex gap-4;
 }
 
-.movie-banner-image {
+.actor-banner-image {
     @apply w-full max-w-4xl h-[500px] p-4;
 }
 
@@ -10,10 +10,11 @@
     @apply object-cover w-full rounded-md h-full mx-2 opacity-75;
 }
 
-.movie-description {
+.actor-description {
     @apply grow text-white p-4 flex flex-col justify-items-center;
 }
 
-.movie-banner-title {
+
+.actor-banner-title {
     @apply text-slate-100 text-5xl font-semibold py-8;
 }
