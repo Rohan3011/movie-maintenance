@@ -15,15 +15,17 @@ export class ActorService {
 
 
   constructor(private http: HttpClient) { }
+  getActors(): Observable<Actor[]> {
+    return this.http.get<Actor[]>(this.baseUrl + this.actorUrl);
+  }
 
   getActorsOfMovie(id: string): Observable<Actor[]> {
-
-
-
-    return this.http.post<Actor[]>(this.baseUrl + this.castUrl, { "movie": id });
+    return this.http.post<Actor[]>(
+      this.baseUrl + this.castUrl, { "movie": id });
   }
 
   getActorById(id: string | null): Observable<Actor> {
-    return this.http.get<Actor>(this.baseUrl + this.actorUrl + id);
+    return this.http.get<Actor>(
+      this.baseUrl + this.actorUrl + id);
   }
 }

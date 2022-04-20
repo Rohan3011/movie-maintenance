@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Router } from '@angular/router';
 import { Actor } from 'src/app/types/Actor';
 
 @Component({
@@ -9,6 +10,7 @@ import { Actor } from 'src/app/types/Actor';
 export class ActorCardComponent implements OnInit {
 
   @Input() actor: Actor = {
+    id: 0,
     name: "",
     image: "",
     date_of_birth: "",
@@ -16,9 +18,12 @@ export class ActorCardComponent implements OnInit {
     debut_movie: ""
   }
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
 
+  onClick(id: number): void {
+    this.router.navigate(['/actors/', id])
+  }
 }

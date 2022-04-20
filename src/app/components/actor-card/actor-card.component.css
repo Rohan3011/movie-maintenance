@@ -1,5 +1,5 @@
 .actor-banner {
-    @apply box-border flex w-full max-w-sm m-4 shadow-md rounded-md bg-gradient-to-r from-zinc-700 to-neutral-700 border-b-4 border-zinc-300;
+    @apply box-border flex w-full max-w-sm m-4 shadow-md rounded-md bg-gradient-to-r from-zinc-700 to-neutral-700 border-b-4 border-zinc-300 cursor-pointer;
 }
 
 .actor-image {

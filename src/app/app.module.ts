@@ -11,10 +11,12 @@ import { MovieListComponent } from './components/movie-list/movie-list.component
 import { MovieBannerComponent } from './components/movie-banner/movie-banner.component';
 import { ActorCardComponent } from './components/actor-card/actor-card.component';
 import { CastListComponent } from './components/cast-list/cast-list.component';
+import { ActorListComponent } from './components/actor-list/actor-list.component';
 
 const appRoutes: Routes = [
   { path: '', component: MovieListComponent },
-  { path: 'movies/:id', component: MovieBannerComponent }
+  { path: 'actors', component: ActorListComponent },
+  { path: 'movies/:id', component: MovieBannerComponent },
 ]
 
 
@@ -28,7 +30,8 @@ const appRoutes: Routes = [
     MovieListComponent,
     MovieBannerComponent,
     ActorCardComponent,
-    CastListComponent
+    CastListComponent,
+    ActorListComponent
   ],
   imports: [
     BrowserModule,
