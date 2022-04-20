@@ -1,5 +1,5 @@
 .movie-card {
-    @apply box-border w-full max-w-[350px] min-h-[300px] shadow-md rounded-md flex flex-col m-4 bg-gradient-to-r from-zinc-700 to-neutral-700;
+    @apply box-border w-full max-w-[350px] min-h-[200px] shadow-md rounded-md flex flex-col m-4 bg-gradient-to-r from-zinc-700 to-neutral-700;
 }
 
 .movie-image {

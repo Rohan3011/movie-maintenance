@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { ActorService } from 'src/app/services/actor.service';
 import { Actor } from 'src/app/types/Actor';
 
@@ -9,14 +9,14 @@ import { Actor } from 'src/app/types/Actor';
 })
 export class CastListComponent implements OnInit {
 
-  movie: string = '5';
+  @Input() movie: any;
   actors: Actor[] = [];
 
   constructor(private actorService: ActorService) { }
 
   ngOnInit(): void {
     this.actorService.getActorsOfMovie(this.movie).subscribe((actors) => {
-      console.log(actors)
+      console.log(actors, this.movie)
       this.actors = actors;
     });
   }

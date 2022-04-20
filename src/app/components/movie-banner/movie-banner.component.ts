@@ -10,20 +10,14 @@ import { Movie } from 'src/app/types/Movie';
 })
 export class MovieBannerComponent implements OnInit {
 
-  movie: Movie = {
-    date_of_release: "",
-    title: "",
-    image: "",
-    id: 0,
-    language: "EN",
-    description: ""
-  }
+  movie: Movie;
   id: string = "5";
   constructor(private movieService: MovieService) { }
 
   ngOnInit(): void {
     this.movieService.getMovieById(this.id).subscribe((movie) => {
       this.movie = movie;
+      console.log(this.movie)
     });
   }
 }

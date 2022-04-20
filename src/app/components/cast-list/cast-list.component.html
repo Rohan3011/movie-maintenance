@@ -1,3 +1,6 @@
-<div class=" overflow-auto grid content-center md:grid-cols-2 xl:grid-cols-4">
-    <app-actor-card *ngFor="let actor of actors" [actor]="actor" class="movie-list"></app-actor-card>
+<div class="cast-list">
+    <h4 class="cast-title"> Cast and Crew </h4>
+    <div class=" overflow-auto grid content-center md:grid-cols-2 xl:grid-cols-3">
+        <app-actor-card *ngFor="let actor of actors" [actor]="actor" class="movie-list"></app-actor-card>
+    </div>
 </div>

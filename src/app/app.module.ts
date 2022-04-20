@@ -13,7 +13,8 @@ import { ActorCardComponent } from './components/actor-card/actor-card.component
 import { CastListComponent } from './components/cast-list/cast-list.component';
 
 const appRoutes: Routes = [
-  { path: '', component: MovieListComponent }
+  { path: '', component: MovieListComponent },
+  { path: 'movie', component: MovieBannerComponent }
 ]
 
 

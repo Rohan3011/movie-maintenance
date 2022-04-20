@@ -1,5 +1,5 @@
 .actor-banner {
-    @apply box-border flex w-full max-w-sm m-4 shadow-md rounded-md bg-gradient-to-r from-zinc-700 to-neutral-700 border-b-4;
+    @apply box-border flex w-full max-w-sm m-4 shadow-md rounded-md bg-gradient-to-r from-zinc-700 to-neutral-700 border-b-4 border-zinc-300;
 }
 
 .actor-image {
@@ -7,9 +7,13 @@
 }
 
 .actor-description {
-    @apply p-4;
+    @apply grow p-2 flex flex-col;
 }
 
-.actor-name {
+.actor-title {
     @apply text-slate-100 text-xl font-semibold;
+}
+
+.actor-subtitle {
+    @apply text-slate-300 text-xs;
 }
