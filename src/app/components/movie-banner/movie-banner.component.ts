@@ -16,7 +16,7 @@ export class MovieBannerComponent implements OnInit {
     title: "",
     image: "",
     id: 0,
-    language: "EN",
+    language: "",
     description: ""
   }
 
