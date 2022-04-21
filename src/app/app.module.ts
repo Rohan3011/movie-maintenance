@@ -15,6 +15,7 @@ import { ActorListComponent } from './components/actor-list/actor-list.component
 import { ActorBannerComponent } from './components/actor-banner/actor-banner.component';
 import { FeaturedListComponent } from './components/featured-list/featured-list.component';
 import { StoreModule } from '@ngrx/store';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 const appRoutes: Routes = [
   { path: '', component: MovieListComponent },
@@ -46,6 +47,7 @@ const appRoutes: Routes = [
       appRoutes
     ),
     StoreModule.forRoot({}, {}),
+    FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

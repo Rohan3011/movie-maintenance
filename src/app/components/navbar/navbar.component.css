@@ -27,9 +27,13 @@
 }
 
 .searchfield {
-    @apply w-full max-w-3xl;
+    @apply w-full max-w-3xl p-3 rounded-full bg-inherit text-slate-200 text-lg font-medium border border-zinc-700 flex;
 }
 
 .searchbar {
-    @apply w-full p-3 rounded-full bg-inherit text-slate-200 text-lg font-medium border border-zinc-700 outline-transparent;
+    @apply grow bg-inherit outline-none;
+}
+
+.icons {
+    @apply mx-1 text-zinc-400;
 }
