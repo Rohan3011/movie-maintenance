@@ -1,3 +1,27 @@
-.title {
-    @apply text-blue-400;
+.header {
+    @apply flex p-4 my-4 space-x-10;
+}
+
+.searchfield {
+    @apply w-full max-w-3xl;
+}
+
+.searchbar {
+    @apply w-full p-3 rounded-full bg-gradient-to-r from-zinc-700 to-neutral-700 text-slate-200 text-lg font-medium border border-zinc-400 outline-transparent;
+}
+
+.filters {
+    @apply grow rounded-full bg-gradient-to-r from-zinc-700 to-neutral-700 text-slate-200 flex justify-center;
+}
+
+.filter-tags {
+    @apply grow px-4 flex items-center justify-end gap-3;
+}
+
+.filter-tag {
+    @apply h-fit px-1 bg-gradient-to-r from-zinc-500 to-neutral-500 text-base text-slate-200 rounded cursor-pointer;
+}
+
+.filter-title {
+    @apply p-4 flex items-center justify-start font-semibold;
 }

@@ -1,7 +1,8 @@
 <div class="movie-card" id={{movie.id}} (click)="onClick(movie.id)">
-    <img src={{movie.image}} alt="movie thumbnail" class="movie-image" />
+    <img loading="lazy" src={{movie.image}} alt="movie thumbnail" class="movie-image" />
     <div class="movie-discription">
         <div class="flex">
+
             <h4 class="movie-title">{{movie.title}}</h4>
             <span class="movie-tag">{{movie.language}}</span>
         </div>
