@@ -2,8 +2,20 @@
     @apply w-full p-4 flex border-b border-zinc-700;
 }
 
-.navbar-link {
-    @apply flex gap-4 w-full max-w-sm items-center text-slate-200;
+.navbar-links {
+    @apply flex gap-8 w-full max-w-sm items-center text-slate-200;
+}
+
+.navbar-links>li {
+    @apply font-medium text-lg;
+}
+
+.link {
+    @apply border-b-2 border-transparent;
+}
+
+.link:hover {
+    @apply border-white;
 }
 
 .navbar-header {
