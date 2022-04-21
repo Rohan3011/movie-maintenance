@@ -13,3 +13,11 @@
 .navbar-left {
     @apply w-full max-w-sm flex gap-4 justify-end text-slate-200;
 }
+
+.searchfield {
+    @apply w-full max-w-3xl;
+}
+
+.searchbar {
+    @apply w-full p-3 rounded-full bg-inherit text-slate-200 text-lg font-medium border border-zinc-700 outline-transparent;
+}
