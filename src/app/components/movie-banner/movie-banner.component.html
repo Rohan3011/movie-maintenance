@@ -5,6 +5,13 @@
         <span>{{movie.language}} </span>
         <span>{{movie.date_of_release}} </span>
         <p>{{movie.description}}</p>
+        <div class="icons-bar">
+            <fa-icon [icon]="like" class="icons"></fa-icon>
+            <fa-icon [icon]="dislike" class="icons"></fa-icon>
+            <fa-icon [icon]="later" class="icons"></fa-icon>
+            <fa-icon [icon]="share" class="icons"></fa-icon>
+            <fa-icon [icon]="more" class="icons"></fa-icon>
+        </div>
     </div>
 
     <div class="movie-banner-image">

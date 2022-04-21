@@ -17,3 +17,11 @@
 .movie-banner-title {
     @apply text-slate-100 text-5xl font-semibold py-8;
 }
+
+.icons-bar {
+    @apply w-full mt-auto flex justify-around p-4 rounded shadow;
+}
+
+.icons {
+    @apply text-xl text-slate-200 cursor-pointer;
+}
