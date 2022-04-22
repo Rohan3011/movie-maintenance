@@ -22,9 +22,9 @@
     @apply grow flex justify-center text-3xl text-slate-100 font-bold;
 }
 
-.navbar-left {
-    @apply w-full max-w-sm flex gap-4 justify-end text-slate-200;
-}
+/* .navbar-left {
+    @apply ;
+} */
 
 .searchfield {
     @apply w-full max-w-3xl p-3 rounded-full bg-inherit text-slate-200 text-lg font-medium border border-zinc-700 flex;

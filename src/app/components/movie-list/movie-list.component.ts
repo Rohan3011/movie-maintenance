@@ -11,11 +11,18 @@ import { Movie } from 'src/app/types/Movie';
 export class MovieListComponent implements OnInit {
 
   movies: Movie[] = [];
-
+  queryParams: string;
   constructor(private movieService: MovieService) { }
 
   ngOnInit(): void {
-    this.movieService.getMovies().subscribe((movies) => {
+    this.movieService.getMovies(this.queryParams).subscribe((movies) => {
+      this.movies = movies;
+    });
+  }
+
+  setQueryParams(query: string) {
+    this.queryParams = query;
+    this.movieService.getMovies(this.queryParams).subscribe((movies) => {
       this.movies = movies;
     });
   }

@@ -1,14 +1,14 @@
 <header class="header">
-    <h1 class="title">Lastest Movies </h1>
+    <h1 class="title hidden md:inline">Lastest Movies </h1>
     <div class="filters">
         <div class="filter-title">Filters</div>
-        <div class="icons">
+        <div class="icons" (click)="handleDescending()">
             <fa-icon [icon]="filter" class="icon"></fa-icon>
         </div>
         <div class="filter-tags">
-            <div class="filter-tag"> <span>Name</span> </div>
-            <div class="filter-tag"> <span>Release Date</span> </div>
-            <div class="filter-tag"> <span>Language</span> </div>
+            <div class="filter-tag" (click)="handleFilter('title')"> <span>Name</span> </div>
+            <div class="filter-tag" (click)="handleFilter('date_of_release')"> <span>Release Date</span> </div>
+            <div class="filter-tag" (click)="handleFilter('language')"> <span>Language</span> </div>
         </div>
     </div>
 </header>

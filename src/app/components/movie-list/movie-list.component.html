@@ -1,4 +1,4 @@
-<app-header></app-header>
+<app-header (filterEvent)="setQueryParams($event)"></app-header>
 <div class=" overflow-auto grid content-center md:grid-cols-2 xl:grid-cols-4">
     <app-movie-card *ngFor="let movie of movies" [movie]="movie" class="movie-list"></app-movie-card>
 </div>
