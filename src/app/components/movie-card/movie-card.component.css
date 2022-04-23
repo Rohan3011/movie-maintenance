@@ -1,9 +1,9 @@
 .movie-card {
-    @apply box-border w-full shadow-md rounded-md flex flex-col m-4 bg-gradient-to-r from-zinc-700 to-neutral-700 cursor-pointer;
+    @apply w-full max-w-[350px] box-border shadow-md rounded-md flex flex-col m-4 bg-gradient-to-r from-zinc-700 to-neutral-700 cursor-pointer;
 }
 
 .movie-image {
-    @apply grow object-cover rounded-sm w-[350px] h-[300px];
+    @apply grow object-cover rounded-sm w-full max-w-[350px] h-[300px];
 }
 
 .movie-discription {
@@ -19,5 +19,5 @@
 }
 
 .movie-tag {
-    @apply ml-auto bg-gradient-to-r from-zinc-500 to-neutral-500 text-slate-100 px-2 pt-1 rounded text-xs justify-center items-center;
+    @apply ml-auto h-[1.7rem] bg-gradient-to-r from-zinc-500 to-neutral-500 text-slate-100 px-2 pt-1 rounded text-xs justify-center items-center;
 }
