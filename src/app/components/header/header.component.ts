@@ -10,9 +10,9 @@ export class HeaderComponent implements OnInit {
 
   title = "Movie Name"
   filter = faArrowDownShortWide;
-  private isDescending: boolean = false;
-  private hypen: string = '-';
-  private queryParams: string;
+  isDescending: boolean = false;
+  hypen: string = '-';
+  queryParams: string;
   constructor() { }
 
   ngOnInit(): void {
@@ -26,14 +26,24 @@ export class HeaderComponent implements OnInit {
   }
 
   handleFilter(query: string) {
-    this.queryParams = query;
+    if (this.queryParams === query)
+      this.queryParams = "";
+    else
+      this.queryParams = query;
     this.callFilterEvent();
   }
 
   callFilterEvent() {
     const query = (this.isDescending ?
       this.hypen + this.queryParams : this.queryParams);
-    console.log(query)
     this.filterEvent.emit(query)
+  }
+
+
+  getStyle(tag: string) {
+    let style = "tags-default";
+    if (tag == this.queryParams)
+      style = "tags-active";
+    return style;
   }
 }

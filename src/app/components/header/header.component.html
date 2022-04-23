@@ -3,12 +3,18 @@
     <div class="filters">
         <div class="filter-title">Filters</div>
         <div class="icons" (click)="handleDescending()">
-            <fa-icon [icon]="filter" class="icon"></fa-icon>
+            <fa-icon [icon]="filter" [ngClass]="{'tags-active' : isDescending}" class="icon"></fa-icon>
         </div>
         <div class="filter-tags">
-            <div class="filter-tag" (click)="handleFilter('title')"> <span>Name</span> </div>
-            <div class="filter-tag" (click)="handleFilter('date_of_release')"> <span>Release Date</span> </div>
-            <div class="filter-tag" (click)="handleFilter('language')"> <span>Language</span> </div>
+            <div class="tags" [ngClass]="getStyle('title')" (click)="handleFilter('title')">
+                <span>Name</span>
+            </div>
+            <div class="tags" [ngClass]="getStyle('date_of_release')" (click)="handleFilter('date_of_release')">
+                <span>Release Date</span>
+            </div>
+            <div class="tags" [ngClass]="getStyle('language')" (click)="handleFilter('language')">
+                <span>Language</span>
+            </div>
         </div>
     </div>
 </header>

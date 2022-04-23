@@ -7,7 +7,7 @@
 }
 
 .image-bg {
-    @apply object-cover w-full rounded-md h-full mx-2 opacity-75;
+    @apply object-contain w-full rounded-md h-full mx-2 opacity-75;
 }
 
 .actor-description {

@@ -1,9 +1,9 @@
 .movie-card {
-    @apply box-border w-full max-w-[350px] min-h-[200px] shadow-md rounded-md flex flex-col m-4 bg-gradient-to-r from-zinc-700 to-neutral-700 cursor-pointer;
+    @apply box-border w-full shadow-md rounded-md flex flex-col m-4 bg-gradient-to-r from-zinc-700 to-neutral-700 cursor-pointer;
 }
 
 .movie-image {
-    @apply grow object-cover rounded-sm;
+    @apply grow object-cover rounded-sm w-[350px] h-[300px];
 }
 
 .movie-discription {
